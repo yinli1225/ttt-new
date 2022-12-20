@@ -1,0 +1,159 @@
+﻿body {
+  background: linear-gradient(to bottom, #2109d7, #da9865);
+  font-family: "SF Pro", sans-serif;
+  padding: 0px;
+  text-align:center;
+  color: #eee;
+}
+
+nav {
+  display: flex;
+  width: 22.5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-between;
+  background:#eee;
+  position: absolute;
+  top:30px;
+  right: 30px;
+}
+
+h1 {
+  color:#eee;
+  font-size: 80px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px;
+}
+
+li{
+  padding: 10px;
+}
+
+p {
+  display: flexbox;
+  color:#eee;
+  font-size: 20px;
+  font-weight: 320;
+  text-align: center;
+  margin: 40px;
+}
+
+
+.video video {
+  width: 60%;
+  padding-bottom: 30px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.mode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type="number"] {
+  width: 250px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin: 20px;
+}
+
+.board {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.light,.dark {
+  width: 200px;
+  height: 200px;
+  padding: 0px;
+  margin: 0px;
+  border: 5px solid rgba(238, 238, 238, 0.5);
+  text-align: center;
+  vertical-align: middle;
+  font-size: 3rem;
+}
+
+.light{
+  background-color: #da98654c;
+}
+.dark{
+  background-color: #2109d7;
+}
+
+.board .cell.x {
+  color: #c8ee0b;
+}
+
+.board .cell.o {
+  color: #f57078;
+}
+
+.mark{
+  margin-top: 40px;
+}
+
+.plot{
+  margin-bottom: 100px;
+}
+
+.footer {
+  font-size: 16px;
+  text-decoration: none;
+  color: #eee;
+  text-align: center;
+  padding: 10px;
+}
