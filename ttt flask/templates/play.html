@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../static/style.css" />
+    <title> Yin's Tic-Tac-Toe Game</title>
+</head>
+<body>
+  <!-- <nav>
+    <a href="landing.html">Demo Video</a>
+    <a href="index.html">Home</a>
+    <a href="#">Play</a>
+    <a href="stats.html">Statistics</a>
+  </nav> -->
+
+  <h1>Tic-Tac-Toe</h1>
+
+<!--  <p id="status">Game in progress...</p>-->
+
+  <table class="board">
+    <tr>
+      <td class="light">{{p11}}</td>
+      <td class="dark">{{p12}}</td>
+      <td class="light">{{p13}}</td>
+    </tr>
+    <tr>
+      <td class="dark">{{p21}}</td>
+      <td class="light">{{p22}}</td>
+      <td class="dark">{{p23}}</td>
+    </tr>
+    <tr>
+      <td class="light">{{p31}}</td>
+      <td class="dark">{{p32}}</td>
+      <td class="light">{{p33}}</td>
+    </tr>
+  </table>
+
+  <div class="mark">
+    <form action="/move" method="POST">
+      <label for="row">Row:</label>
+      <input type="number" name="row" id="row" min="0" max="2">
+      <label for="column">Column:</label>
+      <input type="number" name="column" id="column" min="0" max="2">
+      <button type="submit">Make move</button>
+    </form>
+  </div>
+  <result>{{result}}</result>
+  <div class="mark">
+    <form action="/stats" method="POST">
+      <button type="submit">Statistic</button>
+    </form>
+  </div>
+  
+  <script src="cli wk10.py"></script>
+
+  <div id="footer">
+        
+    <a> &copy; Copyright 2022 by Yin Li</a>.
+  </div>
+</body>
+</html>
+
+    

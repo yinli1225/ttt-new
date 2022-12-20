@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}" />
+    <title> Yin's Tic-Tac-Toe Game</title>
+</head>
+<body>
+  <!-- <nav>
+    <a href="landing.html">Demo Video</a>
+    <a href="#">Home</a>
+    <a href="play.html">Play</a>
+    <a href="stats.html">Statistics</a>
+  </nav> -->
+  
+  <div class="welcome">
+    <h1>Welcome to Yin's Tic-Tac-Toe Game</h1>
+  </div>
+
+  <div class="about">
+    <h2>How to Play</h2>
+    <p>Tic-Tac-Toe is a simple two-player game where players take turns placing their mark (either an "X" or an "O") on a 3x3 grid.
+      <br> The first player to get three of their marks in a row (horizontally, vertically, or diagonally) wins the game. 
+      <br>If all spaces on the board are filled and there is no winner, the game is a draw.
+    </p>
+    <li>Step1: Enter a number from 0 to 2 to choose to play with a bot, compete with a friend or watch two bots compete.</li>
+    <li>Step2: If you choose play with a friend, you will be asked to enter a name for your friend.</li>
+    <li>Step3: See the statistics after you play or enter another round.</li>
+    <p><b>Now let's get started!</b></p>
+  </div>
+
+  <div class="mode">
+    <h2>Choose Game Mode</h2>
+    <form action="/play" method="post">
+      <label>
+        <input type="radio" name="player0_mode" value="human">
+        player0: Human
+      </label>
+      <label>
+        <input type="radio" name="player0_mode" value="bot">
+        player0: Bot
+      </label>
+     
+      <div class="player-names">
+        <label>
+          Player 1 Name:
+          <br>
+          <input type="text" name="player1">
+        </label>
+      </div>
+      <label>
+        <input type="radio" name="player1_mode" value="human">
+        player 0: Human
+      </label>
+            <label>
+        <input type="radio" name="player1_mode" value="bot">
+        Player 0: Bot
+      </label>
+
+      <div class="player-names">
+<!--        <label>-->
+<!--          Player 1 Name:-->
+<!--          <input type="text" name="player1">-->
+<!--        </label>-->
+        <label>
+          Player 2 Name:
+          <br>
+          <input type="text" name="player2">
+        </label>
+      </div>
+      <button type="submit">Start Game</button>
+    </form>
+  </div>
+
+  <div id="footer">
+        
+    <a> &copy; Copyright 2022 by Yin Li</a>.
+  </div>
+</body>
+</html>
